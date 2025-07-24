@@ -1,0 +1,53 @@
+body {
+    background-color: #f6f8fc;
+    font-family: 'Segoe UI', 'Sans-Serif', Arial, Helvetica;
+}
+
+/* Hide default Streamlit menu/footer */
+#MainMenu, footer, header { visibility: hidden !important; }
+
+/* Style the main button */
+.stButton > button {
+    background-color: #3366cc;
+    color: #fff;
+    border-radius: 7px;
+    padding: 0.75em 2em;
+    font-weight: bold;
+    font-size: 1.1em;
+    box-shadow: 0 2px 12px 0 rgba(51,102,204,0.09);
+    border: none;
+    transition: background 0.3s;
+    margin: 0.5em 0;
+    cursor: pointer;
+}
+.stButton > button:hover {
+    background: #28498a;
+}
+
+/* Custom result card */
+.custom-card {
+    background: linear-gradient(110deg, #dbeafe 60%, #fff 100%);
+    border-radius: 13px;
+    box-shadow: 0 4px 24px 0 rgba(0,0,0,0.07), 0 1.5px 4px 0 rgba(0,0,0,0.09);
+    padding: 2em 2em 1em 2em;
+    margin: 1.2em 0;
+}
+
+.result-badge {
+    padding: 0.2em 1.3em;
+    border-radius: 12px;
+    font-size: 1.16em;
+    font-weight: 700;
+    color: white;
+    display: inline-block;
+    margin-left: 0.8em;
+}
+
+.result-pass {
+    background: linear-gradient(80deg, #34d399 70%, #10b981 100%);
+    box-shadow: 0 2px 10px rgba(52,211,153,0.09);
+}
+.result-fail {
+    background: linear-gradient(80deg, #f87171 70%, #ef4444 100%);
+    box-shadow: 0 2px 10px rgba(239,68,68,0.09);
+}
